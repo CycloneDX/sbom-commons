@@ -3,13 +3,20 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>com.lmco.efoss.sbom</groupId>
+	<groupId>org.cyclonedx.contrib.com.lmco.efoss.sbom</groupId>
 	<artifactId>sbom-commons</artifactId>
 	<version>1.1.1</version>
-	<name>SBomCommons</name>
+	<name>sbom-commons</name>
 	<description>SBom Common Utils used by various SBom Artifacts</description>
-	
+	<url>https://github.com/CycloneDX/sbom-commons</url>
 	<packaging>jar</packaging>
+
+	<licenses>
+		<license>
+			<name>Apache-2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+		</license>
+	</licenses>
 
 	<properties>
 		<arquillian.jacoco.version>1.1.0</arquillian.jacoco.version>
@@ -27,7 +34,66 @@
 		<maven.compiler.target>1.8</maven.compiler.target>
 		<org.apache.commons.lang3.version>3.12.0</org.apache.commons.lang3.version>
 	</properties>
-	
+
+	<scm>
+		<connection>scm:git:git@github.com:CycloneDX/sbom-commons.git</connection>
+		<url>https://github.com/CycloneDX/sbom-commons.git</url>
+		<developerConnection>scm:git:git@github.com:CycloneDX/sbom-commons.git</developerConnection>
+		<tag>HEAD</tag>
+	</scm>
+
+	<issueManagement>
+		<system>GitHub</system>
+		<url>https://github.com/CycloneDX/sbom-commons/issues</url>
+	</issueManagement>
+
+	<ciManagement>
+		<system>GitHub</system>
+		<url>https://github.com/CycloneDX/sbom-commons/actions</url>
+	</ciManagement>
+
+	<distributionManagement>
+		<snapshotRepository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+		</snapshotRepository>
+		<repository>
+			<id>ossrh</id>
+			<url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+		</repository>
+	</distributionManagement>
+
+	<repositories>
+		<repository>
+			<id>maven-central</id>
+			<url>https://repo1.maven.org/maven2</url>
+		</repository>
+		<!-- Resolve snapshot releases -->
+		<repository>
+			<id>ossrh-snapshot</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+			<snapshots>
+				<updatePolicy>always</updatePolicy>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
+	<pluginRepositories>
+		<pluginRepository>
+			<id>ossrh-snapshot</id>
+			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
+			<snapshots>
+				<updatePolicy>always</updatePolicy>
+				<enabled>true</enabled>
+			</snapshots>
+			<releases>
+				<updatePolicy>always</updatePolicy>
+				<enabled>true</enabled>
+			</releases>
+		</pluginRepository>
+	</pluginRepositories>
+
 	<dependencies>
 	
 		<dependency>

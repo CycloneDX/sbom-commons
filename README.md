@@ -1,3 +1,11 @@
+[![Build Status](https://github.com/CycloneDX/sbom-commons/workflows/Maven%20CI/badge.svg)](https://github.com/CycloneDX/sbom-commons/actions?workflow=Maven+CI)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/org.cyclonedx.contrib.com.lmco.efoss.sbom/sbom-commons/badge.svg)](https://maven-badges.herokuapp.com/maven-central/org.cyclonedx.contrib.com.lmco.efoss.sbom/sbom-commons)
+[![License](https://img.shields.io/badge/license-Apache%202.0-brightgreen.svg)][License]
+[![Website](https://img.shields.io/badge/https://-cyclonedx.org-blue.svg)](https://cyclonedx.org/)
+[![Slack Invite](https://img.shields.io/badge/Slack-Join-blue?logo=slack&labelColor=393939)](https://cyclonedx.org/slack/invite)
+[![Group Discussion](https://img.shields.io/badge/discussion-groups.io-blue.svg)](https://groups.io/g/CycloneDX)
+[![Twitter](https://img.shields.io/twitter/url/http/shields.io.svg?style=social&label=Follow)](https://twitter.com/CycloneDX_Spec)
+
 # sbom-commons
 Lockheed Martin developed common SBOM library
 
@@ -25,7 +33,7 @@ With maven configured to connect to [nexus.us.lmco.com](https://nexus.us.lmco.co
 			<version>TAG-Version</version>
 		</dependency>
 ```
-After the dependency is added to your pom you can reference the classes found in this project by adding the import, `import com.lmco.efoss.sbom.commons.*`, to your java class.
+After the dependency is added to your pom you can reference the classes found in this project by adding the import, `import org.cyclonedx.contrib.com.lmco.efoss.sbom.commons.*`, to your java class.
 
 #### How to Run/Use This Project
 The project is not intended as a standalone application, the JUnit tests can be verified through the Maven Command `mvn clean test`.
