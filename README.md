@@ -25,7 +25,6 @@ This project contains common classes used by the various components of the softw
 - Compile first time with the Maven Command `mvn clean install`. The project is not intended as a standalone application, but instead to hold commonalities between the SBOM projects, such as the Date utility. The project was written as a test driven development to validate the methods and classes in this project and additions should have paired JUnit tests. Tests can be verified through the Maven Command `mvn clean test`.
 
 ##### Add to your existing Maven Project
-With maven configured to connect to [nexus.us.lmco.com](https://nexus.us.lmco.com/) you can add following dependency to your pom.xml (note you will have to edit `TAG-Version`)
 ```
 		<dependency>
 			<groupId>org.cyclonedx.contrib.com.lmco.efoss.sbom</groupId>
