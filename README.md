@@ -39,5 +39,11 @@ After the dependency is added to your pom you can reference the classes found in
 The project is not intended as a standalone application, the JUnit tests can be verified through the Maven Command `mvn clean test`.
 
 
-## License
-[Licenses](./LICENSE) for this project.
+Copyright & License
+-------------------
+
+CycloneDX SBOM Commons is Copyright (c) Lockheed Martin Corporation. All Rights Reserved.
+
+Permission to modify and redistribute is granted under the terms of the Apache 2.0 license. See the [License] file for the full license.
+
+[License]: https://github.com/CycloneDX/sbom-commons/blob/master/LICENSE
