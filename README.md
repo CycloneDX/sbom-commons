@@ -28,7 +28,7 @@ This project contains common classes used by the various components of the softw
 With maven configured to connect to [nexus.us.lmco.com](https://nexus.us.lmco.com/) you can add following dependency to your pom.xml (note you will have to edit `TAG-Version`)
 ```
 		<dependency>
-			<groupId>com.lmco.efoss.sbom</groupId>
+			<groupId>org.cyclonedx.contrib.com.lmco.efoss.sbom</groupId>
 			<artifactId>sbom-commons</artifactId>
 			<version>TAG-Version</version>
 		</dependency>
